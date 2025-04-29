@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destination Card</title>
+  <link rel="stylesheet" href="css/detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="/js/detail.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="images/logo.png" alt="TempleTravel">
+    </a>
+
+    <!-- Mobile Menu Button (placed outside nav-right) -->
+    <button class="mobile-menu-btn" id="menuBtn">☰</button>
+
+    <div class="nav-right" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#Temple">Temple</a></li>
+        <li><a href="#Acommadation">Accommodation</a></li>
+        <li><a href="#Transport">Transport</a></li>
+        <li><a href="#Emergency">Emergency</a></li>
+        <li>
+          <a href="#" class="app-link">
+            <img src="images/Vector.png" alt="App Icon" class="app-icon" />
+            Get the App
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-link">
+            <img src="images/Vector (1).png" alt="Language" class="lang-icon" />
+            ENG
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-link">
+            <img src="images/Vector (2).png" alt="Language" class="lang-icon" />
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="destination-card">
+  <div class="destination-image">
+    <img src="images/image (12).png" alt="Katra Vaishno Devi">
+  </div>
+
+  <div class="destination-content">
+    <div class="top-row">
+      <h1>Katra Vaishno Devi</h1>
+      <button class="join-button">Join Community</button>
+    </div>
+
+    <div class="location-row">
+        <img src="/images/4074660398770eee1793e9b7f69e237575ea172f.png" alt="Location Icon" class="location-icon">
+        <span>Vaishno Devi, Jammu Kashmir</span>
+      </div>
+      
+
+    <div class="links-row">
+      <a href="#">Things To Do in Vaishno Devi</a>
+      <a href="#"> <img src="/images/download.png" alt="Location Icon" class="location-icon">  Get Vaishno Devi PDF Guide</a>
+    </div>
+
+    <div class="rating-price-row">
+        <div class="rating">
+          <span class="badge">4.3/5</span> (500+ votes)
+        </div>
+        <div class="price-button-row">
+          <div class="price">
+            <strong>Rs. 5690</strong> 
+          </div><div class="price-t">onwards</div>
+          <button class="view-packages">View Vaishno Devi Packages</button>
+        </div>
+      </div>
+      
+
+    <div class="book-now-row">
+      <button class="book-now" id="bookBtn">Book Now</button>
+    </div>
+  
+    <div class="overview">
+      <h3>Vaishno Devi Temple, Overview</h3>
+      <p>
+        Perched atop the Trikuta Mountains in the Indian state of Jammu and Kashmir, the Vaishno Devi Mandir is one of the most revered Hindu pilgrimage sites in the country. Dedicated to the Hindu goddess Vaishno Devi, also known as Mata Rani or Vaishnavi, this sacred temple draws millions of devotees each year who come to seek the blessings of the divine mother. The temple is situated at an altitude of approximately 5,200 feet above sea level and is nestled amidst picturesque surroundings, offering breathtaking views of the surrounding hills and forests.
+      </p>
+      <button class="read-more">Read more</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Book Your Package</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="required">*</span></label>
+
+          <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Destination<span class="required">*</span></label>
+
+          <input type="text" id="destination" placeholder="Enter destination" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  
+<script>
+  // Get elements
+const modal = document.getElementById('bookingModal');
+const btn = document.getElementById('bookBtn');
+const span = document.getElementsByClassName('close')[0];
+
+// When the user clicks Book Now, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// If user clicks anywhere outside modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<script src="script.js"></script>
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/Darshan Divine.png" alt="Darshan Divine Logo" class="logo">
+        <p>A place which makes your travel easy</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="#">Our guides</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Personal trip</a></li>
+            <li><a href="#">Group trip</a></li>
+            <li><a href="#">Tour payment</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Further information</h4>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Health & safety</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <div class="footer-bottom">
+      <p>Copyright 2024 DarshanDivine, India</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/image (7).png" alt="Instagram"></a>
+        <a href="#"><img src="images/image (8).png" alt="Facebook"></a>
+        <a href="#"><img src="images/image (9).png" alt="YouTube"></a>
+        <a href="#"><img src="images/image (10).png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

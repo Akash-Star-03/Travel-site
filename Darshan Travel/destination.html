@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Packages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/destination.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/destination.js"></script>
+ 
+ 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="/" class="logo">
+            <img src="images/logo.png" alt="TempleTravel">
+          </a>
+      
+          <!-- Mobile Menu Button (placed outside nav-right) -->
+          <button class="mobile-menu-btn" id="menuBtn">☰</button>
+      
+          <div class="nav-right" id="navMenu">
+            <ul class="nav-links">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#Temple">Temple</a></li>
+              <li><a href="#Acommadation">Accommodation</a></li>
+              <li><a href="#Transport">Transport</a></li>
+              <li><a href="#Emergency">Emergency</a></li>
+              <li>
+                <a href="#" class="app-link">
+                  <img src="images/Vector.png" alt="App Icon" class="app-icon" />
+                  Get the App
+                </a>
+              </li>
+              <li>
+                <a href="#" class="lang-link">
+                  <img src="images/Vector (1).png" alt="Language" class="lang-icon" />
+                  ENG
+                </a>
+              </li>
+              <li>
+                <a href="#" class="lang-link">
+                  <img src="images/Vector (2).png" alt="Language" class="lang-icon" />
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Explore More<br>Travel packages<br>for easy travel</h1>
+          <button class="discover-btn">Discover More</button>
+        </div>
+      
+        <div class="hero-image">
+          <img src="images/Frame 42.png" alt="Travel Image">
+        </div>
+      
+        <div class="search-bar">
+          <div class="search-item">
+            <svg width="51" height="56" viewBox="0 0 51 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect y="0.674316" width="51" height="54.6171" fill="url(#pattern0_1_923)" fill-opacity="0.6"/>
+                <defs>
+                <pattern id="pattern0_1_923" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_923" transform="matrix(0.0223109 0 0 0.0208333 -0.0354622 0)"/>
+                </pattern>
+                <image id="image0_1_923" width="48" height="48" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABFdJREFUaAXN2S/sXEUQB/ARFYiKCgQCUYGoQCAQFQhERQWiAlFRgUAgKhAVFQhEBa4kVDQpSUkgaUUdJJBAAklJaAKuJG1S0SaQ0ARRgaioaO8TZpPXu7d77+723e83yea92539zuzs/Nm3FzEfHY+It7N5P/T05kLDTyPi94h4Xmm/JQ/eQ0NvRMTXqfCziPg1Ii5FxAcR8V4275/lGB4LNMfcA6UPI4JCTxdasP6rE7TBg9ccc2HsnY5ExOW05A8R8doWGphjrt2ABXNv9HkK9txFsLlDrL0swJazGsG9qCxidncSdPzW1u9i+eWFw4IJe9bA/iaDb53Pn4qILyLi22x8XF+LYApsMmYhuZvryCA1osTPyYf3z2zeNWOtxcPGN0udAG6La6mSYv+kFS9ExNHBKr3rY2E8tUXAtoCWkQawm73+kYWoNot1KfhWjSGPFXjw1kghvFMb3LZfkLUsw7+Ns/I6woO3FhMqtvGu5DAG1JFgjK7k+NBtxvj04YFVS8NkGO96ADyZoKcrWkmBAnYq4f2uwuz8ZAFOst0IGNDatvdcACN1X8DrCXq+YpKeLkSGBdQyVUWF9d2PG0WmZxDfjAiyutNXEfGkcYT4ZUIaFUvSKN4xku3IIKs7nc2tPVNB7lHIYHMfsrrTKxHxbyN7EGgRrEsJ7W628ttYy7dlJjLImoVKsK47MYoJeZ5CmvdaBiuKnshF1+pD4dvpWY7Tc/gozNmP01Y/h6A5DbOyYw5rfLrnLsCCOcsxemUFg11onTzH5o31weA6PQ0yJuelPpVZPv/+pd7tfvyYWDD3SuXY6/C1LZWDm4uwvdOxiPgrIh5smbfl+oeJAetAqFTnbSxYdnCWqruJNcp1iEI0lWQbgWvugZMcLqBvb6CJW2pz1lX0DSB3Yy3fuR9NgMEj50/5fp4A14fFMdhNgqNwKx0aw4PXnL2Te5vah7sY4BZu42pkDE8tXmSj2r1TDbPZT1lZ4nqmS1t/qzGjuNLYp2f5VGy5jpMrGVIzmWTXDNZQ4//LqRtpLYDO6BT/eFHyW9cd3MLF1H9LAcri+nwPtFwHnwWSRSbZdowuk44ttg+zia4A5fdNrzcskJ/LNJTVvOtrLX7MomTT4e/UiW5VFzNwLy3lnr5lqTFhw75zKfCTRWe5sN2lYNGFTnaRjqOVW2W0Xb2OtG4XFCvNew+iGx3pukICaJPbtRWApQ7B92W2rQJxCa/8rN7qXcxtf6dwHsIn3cQnXVeIlWQQW85vR/1sZdZ+OuhS/p+gY3VHDVzNRcga1/I2YZeA3naJZLrJoANdGJZuVeWHguRj/ltyMQBV1NbZxmoqG4Js+A4TNhlkkVlqEF1q1bspxkeH2zIrv5+AQAuw/K5i+hPPFrvb195fFK13l5q+Mo7XHHNhFEMVbIFKJtldL7n4os9AFZmAnxZKPcr8XIRPfcrp5sKABRP2gcUen1VpNfl6eQf0lfFuMfUCUd83kZxGaYsAAAAASUVORK5CYII="/>
+                </defs>
+                </svg>
+                
+            <input type="text" placeholder="Location">
+          </div>
+          <div class="search-item">
+            <input type="text" placeholder="Days">
+          </div>
+          <div class="search-item">
+            <svg width="51" height="56" viewBox="0 0 51 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect y="0.674316" width="51" height="54.6171" fill="url(#pattern0_1_923)" fill-opacity="0.6"/>
+                <defs>
+                <pattern id="pattern0_1_923" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_923" transform="matrix(0.0223109 0 0 0.0208333 -0.0354622 0)"/>
+                </pattern>
+                <image id="image0_1_923" width="48" height="48" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABFdJREFUaAXN2S/sXEUQB/ARFYiKCgQCUYGoQCAQFQhERQWiAlFRgUAgKhAVFQhEBa4kVDQpSUkgaUUdJJBAAklJaAKuJG1S0SaQ0ARRgaioaO8TZpPXu7d77+723e83yea92539zuzs/Nm3FzEfHY+It7N5P/T05kLDTyPi94h4Xmm/JQ/eQ0NvRMTXqfCziPg1Ii5FxAcR8V4275/lGB4LNMfcA6UPI4JCTxdasP6rE7TBg9ccc2HsnY5ExOW05A8R8doWGphjrt2ABXNv9HkK9txFsLlDrL0swJazGsG9qCxidncSdPzW1u9i+eWFw4IJe9bA/iaDb53Pn4qILyLi22x8XF+LYApsMmYhuZvryCA1osTPyYf3z2zeNWOtxcPGN0udAG6La6mSYv+kFS9ExNHBKr3rY2E8tUXAtoCWkQawm73+kYWoNot1KfhWjSGPFXjw1kghvFMb3LZfkLUsw7+Ns/I6woO3FhMqtvGu5DAG1JFgjK7k+NBtxvj04YFVS8NkGO96ADyZoKcrWkmBAnYq4f2uwuz8ZAFOst0IGNDatvdcACN1X8DrCXq+YpKeLkSGBdQyVUWF9d2PG0WmZxDfjAiyutNXEfGkcYT4ZUIaFUvSKN4xku3IIKs7nc2tPVNB7lHIYHMfsrrTKxHxbyN7EGgRrEsJ7W628ttYy7dlJjLImoVKsK47MYoJeZ5CmvdaBiuKnshF1+pD4dvpWY7Tc/gozNmP01Y/h6A5DbOyYw5rfLrnLsCCOcsxemUFg11onTzH5o31weA6PQ0yJuelPpVZPv/+pd7tfvyYWDD3SuXY6/C1LZWDm4uwvdOxiPgrIh5smbfl+oeJAetAqFTnbSxYdnCWqruJNcp1iEI0lWQbgWvugZMcLqBvb6CJW2pz1lX0DSB3Yy3fuR9NgMEj50/5fp4A14fFMdhNgqNwKx0aw4PXnL2Te5vah7sY4BZu42pkDE8tXmSj2r1TDbPZT1lZ4nqmS1t/qzGjuNLYp2f5VGy5jpMrGVIzmWTXDNZQ4//LqRtpLYDO6BT/eFHyW9cd3MLF1H9LAcri+nwPtFwHnwWSRSbZdowuk44ttg+zia4A5fdNrzcskJ/LNJTVvOtrLX7MomTT4e/UiW5VFzNwLy3lnr5lqTFhw75zKfCTRWe5sN2lYNGFTnaRjqOVW2W0Xb2OtG4XFCvNew+iGx3pukICaJPbtRWApQ7B92W2rQJxCa/8rN7qXcxtf6dwHsIn3cQnXVeIlWQQW85vR/1sZdZ+OuhS/p+gY3VHDVzNRcga1/I2YZeA3naJZLrJoANdGJZuVeWHguRj/ltyMQBV1NbZxmoqG4Js+A4TNhlkkVlqEF1q1bspxkeH2zIrv5+AQAuw/K5i+hPPFrvb195fFK13l5q+Mo7XHHNhFEMVbIFKJtldL7n4os9AFZmAnxZKPcr8XIRPfcrp5sKABRP2gcUen1VpNfl6eQf0lfFuMfUCUd83kZxGaYsAAAAASUVORK5CYII="/>
+                </defs>
+                </svg>
+                
+            <input type="text" placeholder="Rooms">
+          </div>
+          <div class="search-item">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.6668 43.75V39.5833C41.6668 37.3732 40.7889 35.2536 39.226 33.6908C37.6632 32.128 35.5436 31.25 33.3335 31.25H16.6668C14.4567 31.25 12.3371 32.128 10.7743 33.6908C9.21147 35.2536 8.3335 37.3732 8.3335 39.5833V43.75" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24.9998 22.9167C29.6022 22.9167 33.3332 19.1857 33.3332 14.5833C33.3332 9.98096 29.6022 6.25 24.9998 6.25C20.3975 6.25 16.6665 9.98096 16.6665 14.5833C16.6665 19.1857 20.3975 22.9167 24.9998 22.9167Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            <input type="text" placeholder="Guests">
+          </div>
+          <div class="search-item">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44.8346 6.25H3.16797L19.8346 25.9583V39.5833L28.168 43.75V25.9583L44.8346 6.25Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            <input type="text" placeholder="Deity">
+          </div>
+          <button class="search-btn square">
+            <svg viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33 57.6514C46.2548 57.6514 57 46.7835 57 33.3771C57 19.9708 46.2548 9.10284 33 9.10284C19.7452 9.10284 9 19.9708 9 33.3771C9 46.7835 19.7452 57.6514 33 57.6514Z" stroke="white" stroke-width="4"/>
+              <path d="M63.0002 63.72L49.9502 50.5209" stroke="white" stroke-width="4"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+      
+  <!-- Main Content Section -->
+<!-- Main content wrapper -->
+<main class="main-content">
+    <!-- Filters Sidebar -->
+    <aside class="filters">
+      <h2>Filter By</h2>
+  
+      <div class="filter-group">
+        <h3>Travel Type</h3>
+        <label><input type="checkbox" value="Adventure"> Adventure</label>
+        <label><input type="checkbox" value="Family"> Family</label>
+        <label><input type="checkbox" value="Honeymoon"> Honeymoon</label>
+      </div>
+  
+      <div class="filter-group">
+        <h3>Sort By</h3>
+        <select id="sortOptions">
+          <option value="price">Price</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </div>
+  
+      <button id="applyFilterBtn" class="apply-button">Apply Filter</button>
+    </aside>
+  
+    <!-- Destination Cards -->
+    <section class="destinations-grid" id="destinationsGrid">
+      <!-- Cards appear here -->
+    </section>
+  </main>
+ 
+  
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/Darshan Divine.png" alt="Darshan Divine Logo" class="logo">
+        <p>A place which makes your travel easy</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="#">Our guides</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Personal trip</a></li>
+            <li><a href="#">Group trip</a></li>
+            <li><a href="#">Tour payment</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Further information</h4>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Health & safety</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <div class="footer-bottom">
+      <p>Copyright 2024 DarshanDivine, India</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/image (7).png" alt="Instagram"></a>
+        <a href="#"><img src="images/image (8).png" alt="Facebook"></a>
+        <a href="#"><img src="images/image (9).png" alt="YouTube"></a>
+        <a href="#"><img src="images/image (10).png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+  <div id="bookingFormOverlay" class="booking-overlay hidden">
+    <div class="booking-form">
+      <h2>Book Your Package</h2>
+      <form id="bookingForm">
+        <label>Name *</label>
+        <input type="text" id="name" required>
+  
+        <label>Email *</label>
+        <input type="email" id="email" required>
+  
+        <label>Mobile Number *</label>
+        <input type="tel" id="mobile" required>
+  
+        <label>Destination</label>
+        <input type="text" id="destination" readonly>
+  
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button" id="cancelFormBtn" class="cancel-btn">Cancel</button>
+
+
+      </form>
+    </div>
+  </div>
+  
+</script>
+
+</body>
+</html>

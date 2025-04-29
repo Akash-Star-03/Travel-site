@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Travel - Explore Temples</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="js/Hero.js">
+  <script src="js/Hero.js"></script>
+  <style>
+   
+    </style>
+    
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="TempleTravel">
+      </a>
+  
+      <!-- Mobile Menu Button (placed outside nav-right) -->
+      <button class="mobile-menu-btn" id="menuBtn">☰</button>
+  
+      <div class="nav-right" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#Temple">Temple</a></li>
+          <li><a href="#Acommadation">Accommodation</a></li>
+          <li><a href="#Transport">Transport</a></li>
+          <li><a href="#Emergency">Emergency</a></li>
+          <li>
+            <a href="#" class="app-link">
+              <img src="images/Vector.png" alt="App Icon" class="app-icon" />
+              Get the App
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-link">
+              <img src="images/Vector (1).png" alt="Language" class="lang-icon" />
+              ENG
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-link">
+              <img src="images/Vector (2).png" alt="Language" class="lang-icon" />
+              
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+  
+
+  
+  <script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+
+
+  <!-- Hero Section -->
+  <section >
+    <container class="hero">
+<!--Search bar-->
+<div class="search-container">
+        <div class="search-box">
+          <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="78" height="78" fill="url(#pattern0_1_36)" fill-opacity="0.6"/>
+            <defs>
+            <pattern id="pattern0_1_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_36" transform="scale(0.0208333)"/>
+            </pattern>
+            <image id="image0_1_36" width="48" height="48" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABFdJREFUaAXN2S/sXEUQB/ARFYiKCgQCUYGoQCAQFQhERQWiAlFRgUAgKhAVFQhEBa4kVDQpSUkgaUUdJJBAAklJaAKuJG1S0SaQ0ARRgaioaO8TZpPXu7d77+723e83yea92539zuzs/Nm3FzEfHY+It7N5P/T05kLDTyPi94h4Xmm/JQ/eQ0NvRMTXqfCziPg1Ii5FxAcR8V4275/lGB4LNMfcA6UPI4JCTxdasP6rE7TBg9ccc2HsnY5ExOW05A8R8doWGphjrt2ABXNv9HkK9txFsLlDrL0swJazGsG9qCxidncSdPzW1u9i+eWFw4IJe9bA/iaDb53Pn4qILyLi22x8XF+LYApsMmYhuZvryCA1osTPyYf3z2zeNWOtxcPGN0udAG6La6mSYv+kFS9ExNHBKr3rY2E8tUXAtoCWkQawm73+kYWoNot1KfhWjSGPFXjw1kghvFMb3LZfkLUsw7+Ns/I6woO3FhMqtvGu5DAG1JFgjK7k+NBtxvj04YFVS8NkGO96ADyZoKcrWkmBAnYq4f2uwuz8ZAFOst0IGNDatvdcACN1X8DrCXq+YpKeLkSGBdQyVUWF9d2PG0WmZxDfjAiyutNXEfGkcYT4ZUIaFUvSKN4xku3IIKs7nc2tPVNB7lHIYHMfsrrTKxHxbyN7EGgRrEsJ7W628ttYy7dlJjLImoVKsK47MYoJeZ5CmvdaBiuKnshF1+pD4dvpWY7Tc/gozNmP01Y/h6A5DbOyYw5rfLrnLsCCOcsxemUFg11onTzH5o31weA6PQ0yJuelPpVZPv/+pd7tfvyYWDD3SuXY6/C1LZWDm4uwvdOxiPgrIh5smbfl+oeJAetAqFTnbSxYdnCWqruJNcp1iEI0lWQbgWvugZMcLqBvb6CJW2pz1lX0DSB3Yy3fuR9NgMEj50/5fp4A14fFMdhNgqNwKx0aw4PXnL2Te5vah7sY4BZu42pkDE8tXmSj2r1TDbPZT1lZ4nqmS1t/qzGjuNLYp2f5VGy5jpMrGVIzmWTXDNZQ4//LqRtpLYDO6BT/eFHyW9cd3MLF1H9LAcri+nwPtFwHnwWSRSbZdowuk44ttg+zia4A5fdNrzcskJ/LNJTVvOtrLX7MomTT4e/UiW5VFzNwLy3lnr5lqTFhw75zKfCTRWe5sN2lYNGFTnaRjqOVW2W0Xb2OtG4XFCvNew+iGx3pukICaJPbtRWApQ7B92W2rQJxCa/8rN7qXcxtf6dwHsIn3cQnXVeIlWQQW85vR/1sZdZ+OuhS/p+gY3VHDVzNRcga1/I2YZeA3naJZLrJoANdGJZuVeWHguRj/ltyMQBV1NbZxmoqG4Js+A4TNhlkkVlqEF1q1bspxkeH2zIrv5+AQAuw/K5i+hPPFrvb195fFK13l5q+Mo7XHHNhFEMVbIFKJtldL7n4os9AFZmAnxZKPcr8XIRPfcrp5sKABRP2gcUen1VpNfl6eQf0lfFuMfUCUd83kZxGaYsAAAAASUVORK5CYII="/>
+            </defs>
+            </svg>
+            
+            
+            <input type="text" class="search-input" placeholder="Search temple here">
+        </div>
+        
+        <div class="search-box">
+          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="77" height="77" fill="url(#pattern0_1_37)" fill-opacity="0.6"/>
+            <defs>
+            <pattern id="pattern0_1_37" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_37" transform="scale(0.0208333)"/>
+            </pattern>
+            <image id="image0_1_37" width="48" height="48" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAArlJREFUaAXtmK9vFFEQx78CgahAIBAVFQgEfwICgaiorKjgD0BUICoRSBIECGSTkoAkqegfAAlIRBNIEIgKBAJRUYFAwH2St5dt7+bezO7c7ZHsJC+3N2/mOz/27fvuW2kUswM3Jb0v44ZptaYTtyR9k/S7DK7R/RdyR9JPSReS7pXB9Q9JzK21kPCvUsDdVqZcUxQDm7WUndJ1lsvtORmiY467sT1nflDVQ0l/JH2urHWeA2yw3Rs041bwx5L+SvogaaOlty6xwRYffAeVFyWRd5KuBTLBFh+KeB7wSzMlgTclgZfB5JskwMCXIo46YjRYoV+WwEkJ/CTkOd8YDIo4di7B+ShOLez6sTyEj5w+HjOweLDBXhprt9l115NV0AZMmHsprH2VXYO5uc0huXTWttjVnVXQMJW1a+wazM1tnsLaXnZ1ZxU07MXaUXYN5uY278TaXdnVnVXQ0M3aGewazM1tXmXtLuy6KYnn5GCSxtOOA18wwPKIydpvA+x6vzAm9J85YGGwa9KwNjlPBccH03/2BZ0maY6HdI89+7ptXp3BFwywwASbGDUhV0+xl3CaN8fDnklfAm39oRiwKeJZS59yyekJ4FcpaItBiEGstBMbnfku6XRF7+zsOMQiZp/lOW0TB3A6ssqDeGpMbilviIu6wTlhf1KydzvFFh9LiEXMlCXL2ZVbaslW+RbEXYoMvh/ha8nXcm625t16viAwLGHnOC/boWVzVQ9xUQC+ltTiWn4z+hpQbX4GsChqfrV5C3dGXwOqzc8AjgVYLTH0nySdTeasHYa5RfNd/cAkdm8BKLK7ZNoSu7cAkgIUzCQtbhrQWECwA435eAeaTgR/0xqXBjQWEOxAY84d4GXNIqRl6YlJ7N7yZUAiI3Zv6fqy1jdwWtw0oGBFaXFfT05OjFXLUHFXW+c/2JpFLpmUEXEAAAAASUVORK5CYII="/>
+            </defs>
+            </svg>
+            
+            <input type="text" class="search-input" placeholder="Search Accommodations here">
+        </div>
+        
+        <div class="search-box">
+          <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="76" height="76" fill="url(#pattern0_1_38)" fill-opacity="0.6"/>
+            <defs>
+            <pattern id="pattern0_1_38" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_38" transform="scale(0.0208333)"/>
+            </pattern>
+            <image id="image0_1_38" width="48" height="48" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAyJJREFUaAXtmK3PFDEQh38CgUAgkIhXIBAIJAKBQCAICoFA8AcgEEgEAoFAIBB4xEuCQZCAIAGBQBCQkCAQkCAQCAQCAftcOpudvu1uu3fs7SU7SdNtb9o+M9PPkxZZPLB4YPHAXDywJ+mepOeSXs00wQYjrE7OSfoV0ltJr2eaYDPOs10Lvkj6JOl4t3Km3zDCCvNKTkn6K+mqVexADivMJ2Fl+lAg3xVxzK6wIxY4ZleoNOCMpEdr7ljsLLckHa4Y2zG7QmUnfyR9W3PHYmehHwwpFcfsCqU9NAvocYA/UtEmp3qtuyhzSp16x+wKHaWhTzsrhvRKfq9lcPpWuFIyUkdnmwbA2u6cnGgUSN8bwNvNcV0yLaY2ACbYYDTe9jQ+L+mmpJfhx4+p+0bH+3xOaQB3H5gAhxFWmJNyWdLP0KAvElMZAAPwMMFWJChiLSHLyVQG3AksxfAG/EzSDysk8nfBK5u4en8IkBcT48DwNFE/WHUjdHoio/k+GGCRWCc3Ay5FYzE2MwGWasEbNGabTYkBp36rrbOtPB7L6lORGRzDIrC6sia0pzCAsUdHgHnH/DuUgKcqZcBRSbwv+iSlY56OI8DYo9aATR/enzmJDTgWnnu8lO5mGuV0cgbQzf0QheJphCKn3eemMd7KSWwAV2vCjQEvMo1yOn0GwAALTFkj6Pi6pCcBgga5uW9ssQGE+2G4pcZTwdrkdPoMoC0sMOGg/cAK80rMK/zIi5+Q9Xne2sUGWP2YfMgA+mT6wQYjrKSVEdaYO3luwaaguJNgxCbEGNrLWU+nMNr7gXajH/Uc8b/D/YS5SaLDmsS1GH2mLp4tifwBZjogHOQ1wiXrTSecFtYxOfA17xHH7Ao1FoQpd1oSVwESfZUmOyjJmd814phdoaaXju6YBb3OuK6tK3Sgaj5Z0KQasZdgycKN+3XMrhBrFpb5v3LM/6rtXl44jqk5ZvtvtGYRWUfbyu1R3967voZFWLuYtmEAjGwYMLdyIezpbGebeGH9zz5g5Pw58KjnvvGg2QZtR5lrDuPQPa2NzPKxeGDxwOKBxQO9HvgHgfGX1mSaWj4AAAAASUVORK5CYII="/>
+            </defs>
+            </svg>
+            
+            <input type="text" class="search-input" placeholder="Search Transport here">
+        </div>
+        
+        <button class="search-btn">
+          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M33 57C46.2548 57 57 46.2548 57 33C57 19.7452 46.2548 9 33 9C19.7452 9 9 19.7452 9 33C9 46.2548 19.7452 57 33 57Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M63 63L49.95 49.95" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+             </button>
+    </div>
+
+    </container>
+  
+
+  </section>
+
+  <!-- Popular Destinations -->
+  <div class="container">
+    <h2>Popular Temples</h2>
+    <div class="filters">
+      <select><option>Month</option></select>
+      <select><option>Theme</option></select>
+      <select><option>Budget</option></select>
+      <select><option>Travel duration</option></select>
+      <select><option>Place</option></select>
+    </div>
+  </div>
+
+  <div class="temple-cards-wrapper">
+   <div class="temple-cards">
+    <a href="/destination.html"> <div class="card">
+        <img src="images/image (3).png" alt="Kedarnath Temple" />
+        <div class="card-content">
+          <div class="card-header">
+            <h4>Shri Kedarnath Jyotirlinga Temple</h4>
+            <span class="rating">4.8 (3721)</span>
+          </div>
+          <p>Kedarnath Temple is a Hindu temple... sacred temple of the Mandakini river.</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn">Book now</button>
+        </div>
+      </div> </a>
+      <div class="card">
+        <img src="images/image (5).png" alt="Vaishno Devi" />
+        <div class="card-content">
+          <div class="card-header">
+            <h4>Vaishno Devi</h4>
+            <span class="rating">4.8 (4725)</span>
+          </div>
+          <p>Vaishno Devi is an incarnation of the Hindu mother goddess...</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn">Book now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/image (4).png" alt="Badrinath Temple" />
+        <div class="card-content">
+          <div class="card-header">
+            <h4>Shree Badrinath Temple</h4>
+            <span class="rating">4.8 (4326)</span>
+          </div>
+          <p>The temple is approximately 50 feet tall with a small cupola...</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn">Book now</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="see-all-btn" >
+    <button >See all</button>
+  </div>
+  </section>
+
+  <div class="containers">
+    <h2 class="section-title">Temple Travel Packages</h2>
+    <div class="cards-container">
+      <a href="destination.html">
+      <div class="card">
+        <img src="/images/image (6).png" alt="Temple Image" />
+        <div class="card-content">
+          <div class="location">Gujarat</div>
+          <div class="temple-name">Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat</div>
+          <div>
+            <span class="price">₹ 13,800</span>
+            <span class="onwards">Onwards</span>
+          </div>
+          <div class="review-section">
+            <span>Excellent</span>
+            <span class="star">★ ★ ★ ★ ☆</span>
+            <span>(1 Review)</span>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="destination.html">
+      <div class="card">
+        <img src="/images/image (6).png" alt="Temple Image" />
+        <div class="card-content">
+          <div class="location">Gujarat</div>
+          <div class="temple-name">Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat</div>
+          <div>
+            <span class="price">₹ 13,800</span>
+            <span class="onwards">Onwards</span>
+          </div>
+          <div class="review-section">
+            <span>Excellent</span>
+            <span class="star">★ ★ ★ ★ ☆</span>
+            <span>(1 Review)</span>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="destination.html">
+      <div class="card">
+        <img src="/images/image (6).png" alt="Temple Image" />
+        <div class="card-content">
+          <div class="location">Gujarat</div>
+          <div class="temple-name">Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat</div>
+          <div>
+            <span class="price">₹ 13,800</span>
+            <span class="onwards">Onwards</span>
+          </div>
+          <div class="review-section">
+            <span>Excellent</span>
+            <span class="star">★ ★ ★ ★ ☆</span>
+            <span>(1 Review)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+    <div class="see-all-btn">
+      <button>See all</button>
+    </div>
+  </div>
+  <!--Testimonial section-->
+  <section class="testimonial-section" id="testimonialSection">
+    <div class="testimonial-header">
+      <div class="title-section">
+        <h5>TESTIMONIAL</h5>
+        <h2>What Travelers Are Saying</h2>
+        <p>Create a visual identity for your company and overall brand</p>
+      </div>
+      <div class="slider-buttons">
+        <button onclick="scrollSlider(-1)">&lt;</button>
+        <button onclick="scrollSlider(1)">&gt;</button>
+      </div>
+    </div>
+
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="center">
+          <img src="images/client 1.png" alt="Traveler" />
+          <h4>Sara Jay</h4>
+          <span>Traveller</span>
+        </div>
+          <div class="stars">★★★★★</div>
+          <p>I am a traveler and ON TRIP Travels help me a lot in finding interesting tourist destinations and of course the price offers is very worth it.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="center">
+            <img src="images/client 1.png" alt="Traveler" />
+
+          <h4>Adarsh Mishra</h4>
+          <span>Traveller</span>
+          </div>
+          <div class="stars">★★★★☆</div>
+          <p>Good trip. The team of ON TRIP tours and travel was very supportive and maintained prompt communication with us.</p>
+        </div>
+      </div>
+
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="center">
+            <img src="images/client 1.png" alt="Traveler" />
+          <h4>Deepanshu</h4>
+          <span>Traveller</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Before we define any approach, we need to define the brand's overall goal. We then need to dive.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="center">
+            <img src="images/client 1.png" alt="Traveler" />
+          <h4>Alok Yadav</h4>
+          <span>Traveller</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Efficient, user-friendly website with clear booking steps, secure payment, and excellent customer support made my temple visit seamless and stress-free!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/Darshan Divine.png" alt="Darshan Divine Logo" class="logo">
+        <p>A place which makes your travel easy</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="#">Our guides</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Personal trip</a></li>
+            <li><a href="#">Group trip</a></li>
+            <li><a href="#">Tour payment</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Further information</h4>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Health & safety</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <div class="footer-bottom">
+      <p>Copyright 2024 DarshanDivine, India</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/image (7).png" alt="Instagram"></a>
+        <a href="#"><img src="images/image (8).png" alt="Facebook"></a>
+        <a href="#"><img src="images/image (9).png" alt="YouTube"></a>
+        <a href="#"><img src="images/image (10).png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+  
+ 
+
+  <script src="js/main.js"></script>
+</body>
+</html>
