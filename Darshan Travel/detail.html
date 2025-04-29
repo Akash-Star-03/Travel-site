@@ -49,9 +49,17 @@
     </div>
   </nav>
 </header>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 <div class="destination-card">
   <div class="destination-image">
-    <img src="images/image (12).png" alt="Katra Vaishno Devi">
+    <img src="images/image (12).png" alt="Katra Vaishno Devi" loading="lazy" class="lazy-image">
   </div>
 
   <div class="destination-content">
@@ -61,14 +69,14 @@
     </div>
 
     <div class="location-row">
-        <img src="/images/4074660398770eee1793e9b7f69e237575ea172f.png" alt="Location Icon" class="location-icon">
+        <img src="images/4074660398770eee1793e9b7f69e237575ea172f.png" alt="Location Icon" class="location-icon">
         <span>Vaishno Devi, Jammu Kashmir</span>
       </div>
       
 
     <div class="links-row">
       <a href="#">Things To Do in Vaishno Devi</a>
-      <a href="#"> <img src="/images/download.png" alt="Location Icon" class="location-icon">  Get Vaishno Devi PDF Guide</a>
+      <a href="#"> <img src="images/download.png" alt="Location Icon" class="location-icon">  Get Vaishno Devi PDF Guide</a>
     </div>
 
     <div class="rating-price-row">

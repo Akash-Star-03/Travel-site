@@ -6,7 +6,8 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap items-center p-4 shadow-md bg-white relative">
+    <nav className="flex flex-wrap items-center p-4 shadow-lg bg-white relative z-50 mb-4">
+
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img src="/common/logo.png" alt="Darshan Divine Logo" className="h-12" />
@@ -33,8 +34,8 @@ export default function Navbar() {
       </button> */}
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex ml-auto gap-6 flex-wrap text-gray-700 font-medium">
-        <li><a href="#" className="hover:text-orange-500">Home</a></li>
+      <ul className="hidden md:flex ml-auto gap-6 flex-wrap text-black font-500 font-medium font-poppins font-medium text-md leading-none tracking-normal text-center align-middle">
+        <li><a href="/components/HomePage.jsx" className="hover:text-orange-500">Home</a></li>
         <li><a href="#" className="hover:text-orange-500">Temple</a></li>
         <li><a href="#" className="hover:text-orange-500">Accommodation</a></li>
         <li><a href="#" className="hover:text-orange-500">Transport</a></li>

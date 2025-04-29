@@ -50,6 +50,14 @@
           </div>
         </nav>
       </header>
+      <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navMenu = document.getElementById('navMenu');
+      
+        menuBtn.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      </script>
       <section class="hero-section">
         <div class="hero-content">
           <h1>Explore More<br>Travel packages<br>for easy travel</h1>
@@ -57,7 +65,7 @@
         </div>
       
         <div class="hero-image">
-          <img src="images/Frame 42.png" alt="Travel Image">
+          <img src="images/Frame 42.png" alt="Travel Image" >
         </div>
       
         <div class="search-bar">

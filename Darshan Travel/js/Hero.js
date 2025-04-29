@@ -72,3 +72,4 @@ window.addEventListener('resize', () => {
   const slideOffsetLeft = slides[currentSlide].offsetLeft;
   slider.scrollTo({ left: slideOffsetLeft });
 });
+
