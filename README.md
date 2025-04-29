@@ -4,7 +4,8 @@ A responsive travel website for exploring temples, booking travel packages, and 
 
 ---
 
-## 🚀 Live Demo https://drive.google.com/file/d/1K2gTHqIV0IJK9_lITsT22zJmD4k1bxNA/view?usp=drivesdk screen recordings
+## 🚀 Live Demo    screen recordings
+https://drive.google.com/file/d/1DQqQouS-SRPqXXNQ5bLn-5mbqYHQ2xDf/view?usp=drivesdk 
 
 live deployed link 👇
 🔗 https://travel-site-next-js.vercel.app
@@ -108,7 +109,8 @@ A simple and responsive temple travel guide website built using **HTML**, **CSS*
 
 ---
 
-## 🚀 Live Demo -  https://drive.google.com/file/d/1c1W2mjvxiIT5ehvost7LnzHFS5aJW8L5/view?usp=drivesdk  screen recordings
+## 🚀 Live Demo -   screen recordings
+https://drive.google.com/file/d/17MeN8dSDQreBtcirIzNHIHlAmXZTgTvE/view?usp=drivesdk
 
 live deployed link 👇
 🔗 https://travel-site-rose.vercel.app/
